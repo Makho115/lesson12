@@ -34,10 +34,14 @@
     border-radius: 6px;
     /* background-color: #22C55E; */
     border: none;
+    cursor: pointer;
     background-color: rgba(34, 197, 94, 1);
     color: #fff;
 
 
+}
+.login-box button :hover{
+ opacity: 0.5;
 }
 
 .section-1 {
@@ -179,15 +183,21 @@
 
     margin-top: 88px;
     font-size: 16px;
+    color: rgba(187, 195, 207, 1);
 
 
 }
 
 .logo-boxes {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     width: 1142px;
-    margin: 0 auto;
+    margin: 0 auto; */
+    display: grid;
+    /* grid-template-columns:auto auto auto auto auto; */
+    grid-template-columns: repeat(5, 1fr);
+    
+    column-gap: 62px;
 }
 
 .fealures-block {
@@ -240,12 +250,14 @@
 }
 
 .fealures-block-2 {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     row-gap: 32px;
-    flex-wrap: wrap;
-    margin-top: 48px;
-    margin: 0 auto;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    gap: 32px;
+    margin: 48px  auto 0;
 
 }
 
@@ -254,7 +266,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px 0;
+    /* padding: 32px 0; */
 
 
 }
@@ -339,7 +351,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-
+    cursor: pointer; 
     border-radius: 6px;
 
 
@@ -355,7 +367,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-
+    cursor: pointer;
     border-radius: 6px;
 
 }
